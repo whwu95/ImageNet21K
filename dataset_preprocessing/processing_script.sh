@@ -38,7 +38,8 @@ for i in ${ROOT}/n*; do
     c=`basename $i`
     echo $c
     mkdir -p ${VAL_ROOT}/$c
-    for j in `ls $i/*.JPEG | shuf | head -n 50`; do
+#    for j in `ls $i/*.JPEG | shuf | head -n 50`; do
+    for j in `ls $i/*.JPEG | head -n 50`; do # no shuf for reproducibility
         mv $j ${VAL_ROOT}/$c/
     done
 done
