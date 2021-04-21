@@ -23,10 +23,7 @@ def load_model_weights(model, model_path):
 
 
 def create_model(args):
-    """Create a model
-    """
-
-    print('creating model {}...'.format(args.model_name))
+    print_at_master('creating model {}...'.format(args.model_name))
 
     model_params = {'args': args, 'num_classes': args.num_classes}
     args = model_params['args']
@@ -38,7 +35,7 @@ def create_model(args):
         model = TResnetL(model_params)
     elif args.model_name == 'resnet50':
         model = timm.create_model('resnet50', pretrained=False, num_classes=args.num_classes)
-    elif args.model_name == 'vit_base_patch16_224':
+    elif args.model_name == 'vit_base_patch16_224': # notice - qkv_bias==False currently
         model_kwargs = dict(
             patch_size=16, embed_dim=768, depth=12, num_heads=12, representation_size=None, qkv_bias=False)
         model = timm.models.vision_transformer._create_vision_transformer('vit_base_patch16_224_in21k',

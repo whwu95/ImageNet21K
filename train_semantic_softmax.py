@@ -87,7 +87,7 @@ def train_21k(model, train_loader, val_loader, optimizer, semantic_softmax_proce
         for i, (input, target) in enumerate(train_loader):
             with autocast():  # mixed precision
                 output = model(input)
-                loss = loss_fn(output, target)
+                loss = loss_fn(output, target) # note - loss also in fp16
             model.zero_grad()
             scaler.scale(loss).backward()
             scaler.step(optimizer)

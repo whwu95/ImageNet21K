@@ -1,6 +1,6 @@
 #  Pretrained models
 
-We provide a collection of models trained with semantic softmax on ImageNet-21K-P dataset.
+We provide a collection of models trained with semantic softmax on ImageNet-21K-P dataset. All results are on input resolution of 224.
 <br>For proper comparison between the models, we also provide some throughput metrics.
 
 
@@ -12,7 +12,7 @@ We provide a collection of models trained with semantic softmax on ImageNet-21K-
 [TResNet-L (V2)](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/tresnet_l_v2_miil_21k.pth) | 76.7 | 83.9 | 240 | 300 | 1460 |
 [VIT_base_patch16_224](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/vit_base_patch16_224_miil_21k.pth) | 77.6 | 84.4 | 160 | 340 | 1140 |
 
-To initialize the different models and properly load the model weights, use this [file](./src_files/models/utils/factory.py).
+To initialize the different models and properly load the weights, use this [file](./src_files/models/utils/factory.py).
 
 Notes
  - ViT model highly benefits from O2 mixed-precision training and inference.  O1 mixed-precision speeds (torch.autocast) are lower.
