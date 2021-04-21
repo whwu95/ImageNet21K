@@ -38,7 +38,7 @@ We highly recommend to start working with ImageNet-21K by testing these weights 
 After you will see a significant improvement (and you will), you should proceed to pretraining new models.
 
 ### (2) Obtaining and Processing the Dataset
-See instructions for obtaining and processing the dataset in [here](./dataset_processing/Dataset_processing.md).
+See instructions for obtaining and processing the dataset in [here](./dataset_processing/processing_instructions.md).
 
 
 ### (3) Training Code
