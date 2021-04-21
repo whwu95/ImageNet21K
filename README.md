@@ -32,7 +32,7 @@ Our proposed pretraining pipeline is efficient, accessible, and leads to SoTA re
 Note - repo under construction, more contetnt will be added soon.
 
 ### (1) Pretrained Models  on ImageNet-21K-P Dataset
-| Backbone  |  ImageNet-21K-P semantic<br> top-1 Accuracy [%] | ImageNet-1K<br> top-1 Accuracy [%] | Maximal <br> batch size | Maximal <br> training speed <br>(img/sec) | Maximal <br> inference speed <br>(img/sec) |
+| Backbone  |  ImageNet-21K-P semantic<br> top-1 Accuracy <br>[%] | ImageNet-1K<br> top-1 Accuracy <br>[%] | Maximal <br> batch size | Maximal <br> training speed <br>(img/sec) | Maximal <br> inference speed <br>(img/sec) |
 | :------------: | :--------------: | :--------------: | :--------------: | :--------------: | :--------------: |
 [MobilenetV3_large_100](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/mobilenetv3_large_100_miil_21k.pth) | 73.1 | 78.0 | 488 | 1210 | 5980 |
 [ResNet50](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/resnet50_miil_21k.pth) | 75.6 | 82.0 | 320 | 720 | 2760 |
