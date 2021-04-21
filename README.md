@@ -34,11 +34,11 @@ Note - repo under construction, more contetnt will be added soon.
 ### (1) Pretrained Models
 In this [link](MODEL_ZOO.md) you can download  weights for various models, pretrained on ImageNet-21K-P dataset.
 
-We highly recommend to start working with ImageNet-21K by testing these weights against standard ImageNet1K training, and compare results on your own relevant downstream tasks.
-After you will see a significant improvement (and you will), you can move to pretraining new models on your own.
+We highly recommend to start working with ImageNet-21K by testing these weights against your current pretraining, and compare results on relevant downstream tasks.
+After you will see a significant improvement (and you will), you should proceed to pretraining new models.
 
 ### (2) Obtaining and Processing the Dataset
-See instructions about obtaining and processing the dataset in [here](./dataset_processing/Dataset_processing.md)
+See instructions for obtaining and processing the dataset in [here](./dataset_processing/Dataset_processing.md).
 
 
 ### (3) Training Code
@@ -52,8 +52,13 @@ python train_semantic_softmax.py \
 --model_path=/mnt/models/mobilenetv3_large_100.pth \
 --epochs=80
 ```
-We initilize our training from standard ImageNet1K to shorten it. Recommended to use wieghts from the excellenet [repo](https://github.com/rwightman/pytorch-image-models).
+We initilize our training from standard ImageNet-1K to shorten it. Recommended to use ImageNet-1K weights from the excellent [repo](https://github.com/rwightman/pytorch-image-models).
 
+## To be added soon
+- KD training code
+- Inference code
+- Model weights when transferred to ImageNet-1K
+- More...
 
 ## Citation
 ```
