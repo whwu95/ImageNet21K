@@ -31,11 +31,19 @@ Our proposed pretraining pipeline is efficient, accessible, and leads to SoTA re
 
 Note - repo under construction, more contetnt will be added soon.
 
-### (1) Pretrained Models
-In this [link](MODEL_ZOO.md) you can download  weights for various models, pretrained on ImageNet-21K-P dataset.
+### (1) Pretrained Models  on ImageNet-21K-P Dataset
+| Backbone  |  ImageNet-21K-P semantic<br> top-1 Accuracy [%] | ImageNet-1K<br> top-1 Accuracy [%] | Maximal <br> batch size | Maximal <br> training speed <br>(img/sec) | Maximal <br> inference speed <br>(img/sec) |
+| :------------: | :--------------: | :--------------: | :--------------: | :--------------: | :--------------: |
+[MobilenetV3_large_100](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/mobilenetv3_large_100_miil_21k.pth) | 73.1 | 78.0 | 488 | 1210 | 5980 |
+[ResNet50](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/resnet50_miil_21k.pth) | 75.6 | 82.0 | 320 | 720 | 2760 |
+[TResNet-M](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/tresnet_m_miil_21k.pth) | 76.4 | 83.1 | 520 | 670 | 2970 |
+[TResNet-L (V2)](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/tresnet_l_v2_miil_21k.pth) | 76.7 | 83.9 | 240 | 300 | 1460 |
+[VIT_base_patch16_224](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/vit_base_patch16_224_miil_21k.pth) | 77.6 | 84.4 | 160 | 340 | 1140 |
 
+See this [link](MODEL_ZOO.md) for more details.
+<br>
 We highly recommend to start working with ImageNet-21K by testing these weights against your current pretraining, and compare results on relevant downstream tasks.
-After you will see a significant improvement (and you will), you should proceed to pretraining new models.
+After you will see a significant improvement (and you will), proceed to pretraining new models.
 
 ### (2) Obtaining and Processing the Dataset
 See instructions for obtaining and processing the dataset in [here](./dataset_preprocessing/processing_instructions.md).
