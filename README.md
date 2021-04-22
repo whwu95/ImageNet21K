@@ -29,7 +29,7 @@ Our proposed pretraining pipeline is efficient, accessible, and leads to SoTA re
 
 ## Getting Started
 
-Note - repo under construction, more contetnt will be added soon.
+Note - repo under construction, more contetnt will be added.
 
 ### (1) Pretrained Models  on ImageNet-21K-P Dataset
 | Backbone  |  ImageNet-21K-P semantic<br> top-1 Accuracy <br>[%] | ImageNet-1K<br> top-1 Accuracy <br>[%] | Maximal <br> batch size | Maximal <br> training speed <br>(img/sec) | Maximal <br> inference speed <br>(img/sec) |
