@@ -1,4 +1,4 @@
-# ImageNet-21K-P Pretraining for the Masses
+# ImageNet-21K Pretraining for the Masses
 
 <br>[Paper](TBD) |
 [Pretrained models](MODEL_ZOO.md)
