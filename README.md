@@ -1,6 +1,6 @@
 # ImageNet-21K Pretraining for the Masses
 
-<br>[Paper](TBD) |
+<br>[Paper](https://arxiv.org/pdf/2104.10972) |
 [Pretrained models](MODEL_ZOO.md)
 
 Official PyTorch Implementation
@@ -71,5 +71,12 @@ For shortening the training, we initialize the weights from standard ImageNet-1K
 
 ## Citation
 ```
-tbd
+@misc{ridnik2021imagenet21k,
+      title={ImageNet-21K Pretraining for the Masses}, 
+      author={Tal Ridnik and Emanuel Ben-Baruch and Asaf Noy and Lihi Zelnik-Manor},
+      year={2021},
+      eprint={2104.10972},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
