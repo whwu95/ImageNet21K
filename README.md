@@ -1,5 +1,13 @@
 # ImageNet-21K Pretraining for the Masses
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/imagenet-21k-pretraining-for-the-masses/multi-label-classification-on-ms-coco)](https://paperswithcode.com/sota/multi-label-classification-on-ms-coco?p=imagenet-21k-pretraining-for-the-masses)
+<br>
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/imagenet-21k-pretraining-for-the-masses/multi-label-classification-on-pascal-voc-2007)](https://paperswithcode.com/sota/multi-label-classification-on-pascal-voc-2007?p=imagenet-21k-pretraining-for-the-masses)
+<br>
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/imagenet-21k-pretraining-for-the-masses/fine-grained-image-classification-on-stanford)](https://paperswithcode.com/sota/fine-grained-image-classification-on-stanford?p=imagenet-21k-pretraining-for-the-masses)
+<br>
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/imagenet-21k-pretraining-for-the-masses/image-classification-on-cifar-100)](https://paperswithcode.com/sota/image-classification-on-cifar-100?p=imagenet-21k-pretraining-for-the-masses)
+
 <br>[Paper](https://arxiv.org/pdf/2104.10972) |
 [Pretrained models](MODEL_ZOO.md)
 
@@ -28,8 +36,6 @@ Our proposed pretraining pipeline is efficient, accessible, and leads to SoTA re
 </p>
 
 ## Getting Started
-
-Note - repo under construction, more contetnt will be added.
 
 ### (1) Pretrained Models  on ImageNet-21K-P Dataset
 | Backbone  |  ImageNet-21K-P semantic<br> top-1 Accuracy <br>[%] | ImageNet-1K<br> top-1 Accuracy <br>[%] | Maximal <br> batch size | Maximal <br> training speed <br>(img/sec) | Maximal <br> inference speed <br>(img/sec) |
@@ -63,11 +69,19 @@ python train_semantic_softmax.py \
 ```
 For shortening the training, we initialize the weights from standard ImageNet-1K. Recommended to use ImageNet-1K weights from this excellent [repo](https://github.com/rwightman/pytorch-image-models).
 
-## To be added soon
+## Additional SoTA results
+The results in the article are comparative results, with fixed hyper-parameters.
+In addition, using our pretrained models, and a dedicated training scheme with adjusted hyper-parameters per dataset (resolution, optimizer, learning rate), we were able
+to achieve SoTA results on several computer vision dataset - MS-COCO, Pascal-VOC, Stanford Cars and CIFAR-100.
+
+We will share our models' checkpoints to validate our scores.
+
+## To be added
 - KD training code
 - Inference code
 - Model weights after transferred to ImageNet-1K
-- More...
+- Downstream training code.
+- More
 
 ## Citation
 ```
