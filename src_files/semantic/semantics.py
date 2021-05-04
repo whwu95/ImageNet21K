@@ -2,7 +2,6 @@ import torch
 import numpy as np
 from torch import Tensor
 
-
 class ImageNet21kSemanticSoftmax:
     def __init__(self, args):
         self.args = args

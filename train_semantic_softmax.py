@@ -1,7 +1,7 @@
 # --------------------------------------------------------
 # ImageNet-21K Pretraining for The Masses
 # Copyright 2021 Alibaba MIIL (c)
-# Licensed under MIT License [see LICENSE file for details]
+# Licensed under MIT License [see the LICENSE file for details]
 # Written by Tal Ridnik
 # --------------------------------------------------------
 
