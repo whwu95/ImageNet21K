@@ -38,10 +38,10 @@ Our proposed pretraining pipeline is efficient, accessible, and leads to SoTA re
 ## Getting Started
 
 ### (0) Visualization and Inference Script
-First you can play and do inference with an existing detector using the following [script](./visualize_detector).
+First you can play and do inference on dedicated images using the following [script](./visualize_detector).
 An example result:
 
-<img src="./pics/dog_inference.png" align="center" width="400" >
+<img src="./pics/dog_inference.png" align="center" width="500" >
 
 ### (1) Pretrained Models  on ImageNet-21K-P Dataset
 | Backbone  |  ImageNet-21K-P semantic<br> top-1 Accuracy <br>[%] | ImageNet-1K<br> top-1 Accuracy <br>[%] | Maximal <br> batch size | Maximal <br> training speed <br>(img/sec) | Maximal <br> inference speed <br>(img/sec) |
@@ -57,6 +57,17 @@ See this [link](MODEL_ZOO.md) for more details.
 <br>
 We highly recommend to start working with ImageNet-21K by testing these weights against standard ImageNet-1K pretraining, and comparing results on your relevant downstream tasks.
 After you will see a significant improvement (you will), proceed to pretraining new models.
+
+Note that some of our models, with 21K and 1K pretraining, are also avaialbe via the excellent [timm](https://github.com/rwightman/pytorch-image-models) package:
+```
+model = timm.create_model('mobilenetv3_large_100_1k_miil', pretrained=True)
+model = timm.create_model('mobilenetv3_large_100_in21k_miil', pretrained=True)
+model = timm.create_model('tresnet_m', pretrained=True)
+model = timm.create_model('tresnet_m_in21k_miil', pretrained=True)
+model = timm.create_model('vit_base_patch16_224_1k_miil', pretrained=True)
+model = timm.create_model('vit_base_patch16_224_in21k_miil', pretrained=True)
+```
+
 
 ### (2) Obtaining and Processing the Dataset
 See instructions for obtaining and processing the dataset in [here](./dataset_preprocessing/processing_instructions.md).
