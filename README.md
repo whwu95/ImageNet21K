@@ -37,6 +37,12 @@ Our proposed pretraining pipeline is efficient, accessible, and leads to SoTA re
 
 ## Getting Started
 
+### (0) Visualization and Inference Script
+First you can play and do inference with an existing detector using the following [script](./visualize_detector).
+An example result:
+
+<img src="./pics/dog_inference.png" align="center" width="400" >
+
 ### (1) Pretrained Models  on ImageNet-21K-P Dataset
 | Backbone  |  ImageNet-21K-P semantic<br> top-1 Accuracy <br>[%] | ImageNet-1K<br> top-1 Accuracy <br>[%] | Maximal <br> batch size | Maximal <br> training speed <br>(img/sec) | Maximal <br> inference speed <br>(img/sec) |
 | :------------: | :--------------: | :--------------: | :--------------: | :--------------: | :--------------: |
@@ -76,12 +82,12 @@ to achieve SoTA results on several computer vision dataset - MS-COCO, Pascal-VOC
 
 We will share our models' checkpoints to validate our scores.
 
-## To be added
-- KD training code
-- Inference code
-- Model weights after transferred to ImageNet-1K
-- Downstream training code.
-- More
+<!--## To be added-->
+<!--- KD training code-->
+<!--- Inference code-->
+<!--- Model weights after transferred to ImageNet-1K-->
+<!--- Downstream training code.-->
+<!--- More-->
 
 ## Citation
 ```
