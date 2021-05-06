@@ -8,7 +8,7 @@ from timm.data.transforms_factory import create_transform
 from src_files.semantic.semantics import ImageNet21kSemanticSoftmax
 import timm
 
-############### downloading metadta ##############
+############### Downloading metadata ##############
 print("downloading metadata...")
 url, filename = (
     "https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/resources/imagenet21k_tree.pth",
@@ -20,7 +20,7 @@ args.tree_path = filename
 semantic_softmax_processor = ImageNet21kSemanticSoftmax(args)
 print("done")
 
-############### loading (ViT) model from timm package ##############
+############### Loading (ViT) model from timm package ##############
 print("initilizing model...")
 model = timm.create_model('vit_base_patch16_224_miil_in21k', pretrained=True)
 model.eval()
@@ -28,7 +28,7 @@ config = resolve_data_config({}, model=model)
 transform = create_transform(**config)
 print("done")
 
-############## loading sample image ##############
+############## Loading sample image ##############
 print("downloading sample image...")
 url, filename = ("https://github.com/pytorch/hub/raw/master/images/dog.jpg", "dog.jpg")
 if not os.path.isfile(filename):
@@ -37,7 +37,7 @@ img = Image.open(filename).convert('RGB')
 tensor = transform(img).unsqueeze(0)  # transform and add batch dimension
 print("done")
 
-############## semantic inference ##############
+############## Doing semantic inference ##############
 print("doing semantic infernce...")
 labels = []
 with torch.no_grad():
@@ -60,7 +60,7 @@ with torch.no_grad():
 
 print("labels found {}.".format(labels))
 
-############## visualization ##############
+############## Visualization ##############
 import matplotlib
 import os
 import numpy as np

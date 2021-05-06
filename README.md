@@ -38,7 +38,7 @@ Our proposed pretraining pipeline is efficient, accessible, and leads to SoTA re
 ## Getting Started
 
 ### (0) Visualization and Inference Script
-First you can play and do inference on dedicated images using the following [script](./visualize_detector).
+First you can play and do inference on dedicated images using the following [script](./visualize_detector.py).
 An example result:
 
 <img src="./pics/dog_inference.png" align="center" width="500" >
